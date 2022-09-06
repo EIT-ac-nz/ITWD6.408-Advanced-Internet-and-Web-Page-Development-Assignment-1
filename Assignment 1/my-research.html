@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<header>
+		<!--Use Flexbox to create the navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="forms.html">FORMS</a></li>
+						<li><a href="xml-rss.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li class="active"><a href="my-research.html">RESEARCH</a></li>	
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>				
+		</div>	
+
+		<!--Curtain menu: collapse this menu as default when loading the page-->
+		<nav id="curtain-nav">
+			<!--Add a close button (X) hyperlink on the top left corner-->
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li><a href="xml-rss.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li class="active"><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+	<main>
+
+
+		<section class="WebDev">
+					
+			<article>
+				<div class="xml-flip-box">
+					<div class="flip-box-inner">
+						  <div class="xml-flip-box-front">
+							<br><h1>Copyright, Creative Common (CC) Licences, Fair Use</h1><br>
+
+
+
+								<img src="MEDIA/research-img1.jpg">
+
+						</div>
+
+
+						<div class="flip-box-back">
+							<p><br>Originality: In order to get a copyright, the work must be the original work from the original author. This means the work shouldn’t be a copy of other works.</p>
+
+							<p>Creativity: A work will only need a small quantity of creativity in order to apply for copyright.</p>
+							
+							<p>Fixation: In order for works to have copyrights, they do not last for a very long time unless there is a record of said work in which the copyright can be applied as it is considered a fixation.</p>
+
+						<p>Types of CC: Attribution, Share Alike, NonComercial and No Derivatives </p>
+						<p>References:</p>
+						<a href="https://guides.library.unt.edu/SCCopyright/basics">SCCopyright</a><br>
+						<a href="https://pressbooks.bccampus.ca/posetest/chapter/what-are-the-different-types-of-creative-commons-licenses/#:~:text=Each%20CC%20license%20is%20made,and%20No%20Derivatives%20(ND).">Types of CC</a><br><br><br>
+
+						</div>
+				  
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="xml-flip-box">
+					<div class="flip-box-inner">
+						  <div class="xml-flip-box-front">
+							<br><h1>Privacy & Web Privacy Policy</h1><br>
+							
+
+
+
+								<img src="MEDIA/research-img2.jpg">
+
+						</div>
+
+
+						<div class="flip-box-back">
+							<p><br>A Pricacy Policy is a document that contains the information on how information is gathered from its clients/customers.</p>
+							<p>Example: This website gathers and uses the information through the resources provided by our course.</p><br><br><br>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="xml-flip-box">
+					<div class="flip-box-inner">
+						<div class="xml-flip-box-front">
+							<br><h1>HOW TO IMPROVE YOUR WEBSITE SEO?</h1><br>
+
+							<img src="MEDIA/research-img3.jpg">
+
+						</div>
+
+
+						<div class="flip-box-back">
+							<p><br>Implementing features such as:</p>
+							<p>An abundance of images that help define search results.<br>Better Resolution scales for different devices.<br>Informative descriptions.<br>Captions.<br>Keywords.</p><br><br><br>
+						</div>
+				  
+					</div>
+				</div>
+			</article>
+
+	</section>
+	<section class="WebDev">
+					
+		<article>
+			<div class="xml-flip-box">
+				<div class="flip-box-inner">
+					<div class="xml-flip-box-front">
+						<br><h1>Factors you should know when choosing a right web hosting provider</h1><br>
+
+							<img src="MEDIA/research-img4.jpg">
+
+					</div>
+
+
+					<div class="flip-box-back">
+						<p><br>Three things to considera are:</p>
+						<p>Are their customer support reliable at solving issues.<br>Are their servers reliable compared to other hosts.<br>Is it affordable in the long run.</p><br><br><br>
+					</div>
+			  
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="xml-flip-box">
+				<div class="flip-box-inner">
+					<div class="xml-flip-box-front">
+						<br><h1>WEB PERFORMANCE AND MAINTENANCE</h1><br>
+
+							<img src="MEDIA/research-img5.jpg"><br>
+
+					</div>
+
+
+					<div class="flip-box-back">
+						<p><br>Ways to improve page loading speed:</p>
+							<p>Reduce the amount of redirects your website uses, this makes loading easier as it will not have to jump as far.
+							<br>Organize and minimize the amount of code used, having less code that will direct you instantly without loading in many other things will increase speed by a bit or a lot depending on how much code there was/is.
+							<br>Choosing the right hosting provider will affect the speed, this mostly depends on the provider so choosing the right one matters.
+							<br>Reduce the amount of plugins used, plugins tend to be unnecessary and slow down the website so deactivating the ones that aren't needed help speed things up.
+							<br>Optimizing images so they dont take up as much space to load, having less pixels to load can add to the websites loading speed but you dont need to lower it all the way.
+							<br>Enabling the browser chaching, this lets the website store information making it easier to revisit once its been loaded once.</p>
+						<p><br>Important ways to manage your website:</p>
+						<p>Reduce the amount of redirects your website uses, this makes loading easier as it will not have to jump as far.
+							<br>Keeping updated backups of the website, keeping multiple backups on the website allows the website to be restored to a previous point if something were to go wrong and just in case, the further back the safer it is even though some things may be missing.
+							<br>Monitoring your websites uptime and downtime, if the website goes down it will cost you a lot expecially in a business that runs through the website. Keeping track of when the site goes down can allow you to quickly act to get it running again.
+							<br>Constant website testing, testing the website is important as if it can be broken it will have a big negative impact. You can run tests to see if the website can be broken or if any loopholes are present and this increases the security of the website as knowing what could happen and fixing the problems will keep your website safe.
+							<br>Managing content loading times, ensuring that the websites content can be loaded in a timely matter when the website has many visitors will keep the website running at a good pace and not affect the many visitors browsing in a heavy manner.
+							<br>Checking feedback, keeping updated on the new comments and activities of the visitors will help in knowing what they are thinking so you can adjust and make changes that could satify them.</p>
+
+							<p>References:</p>
+							<a href="https://upqode.com/website-management-steps/">Website Management</a><br>
+							<a href="https://blog.hubspot.com/marketing/how-to-reduce-your-websites-page-speed">Website Loading Speed</a><br><br><br>
+							
+
+					</div>
+			  
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="xml-flip-box">
+				<div class="flip-box-inner">
+					<div class="xml-flip-box-front">
+						<br><h1>WEB SECURITY</h1><br>
+
+							<img src="MEDIA/research-img6.jpg"><br>
+
+					</div>
+
+
+					<div class="flip-box-back">
+						
+
+						<p><br>5 types of cyber attacks and how to deal with them:</p>
+							<p>Malware attacks: These are malicious software attacks that are designed to exploit and embed itself into the system it has been installed on. These can be avoided by using antivirus softwares that will scan the files before you open them reducing the chance of the file being malicious.
+							<br>Password attacks: These attacks are designed to attempt to crack and gain access to the device and any other authentication medthods by running a command that will spam all combinations untill it suceeds. Picking a long and complication password can help reduce the time it takes for it to be cracked but only decreases the chances of it succeding, some websites have multi-authentication menthods which can improve the security of the account drastically.
+							<br>DDOS attacks: These attacks use other compromised systems to target a specific system in order to flood it with traffic that will attempt to crash or shut down the target. These can be avoided using firewalls and network security that will scan incoming traffic and block it.
+							<br>Phishing attacks: These attacks use fraudulent information to spread malicious links or information through spam that can trick unsuspecting victims. These can be avoided using anti phishing and spam softwares that will protect you from malicious threats that come through the messages/emails on your computer.
+							<br>DNS Spoofing attacks: These attacks use the DNSs of servers to overwrite the IP and direct victims to malicious websites through the targeted website. These can be avoided using DNS security extentions, applying patches and performing DNS traffic filtering that will help prevent your servers DNS being redirected.</p>
+
+							<p>References:</p>
+							<a href="https://www.techtarget.com/searchsecurity/tip/6-common-types-of-cyber-attacks-and-how-to-prevent-them">Cyber Attacks</a><br><br><br>
+					</div>
+			  
+				</div>
+			</div>
+		</article>
+
+</section>
+
+
+
+
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div> @Created by: Phillip Summersby <br />
+			Contact me at: <a href="phillipsummersby@gmail.com">phillipsummersby@gmail.com</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/nav-javascript.js">
+	</script>
+
+</body>
+</html>
+
