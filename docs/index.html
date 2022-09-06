@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+
+<!------------------------------HEAD------------------------------------------------>
+
+	<head>
+		<meta charset="UTF-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<title>Lab 1</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+<!------------------------------BODY------------------------------------------------>
+
+		<body>
+		
+	<!---------------------------------------------------->	
+		
+	<header>
+		<!--Use Flexbox to create the navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo"/>		
+			</div>	
+				
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+			
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="forms.html">FORMS</a></li>
+						<li><a href="xml-rss.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>	
+					</ul>
+				</div>			
+			</div>			
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>				
+		</div>	
+
+		<!--Curtain menu: collapse this menu as default when loading the page-->
+		<nav id="curtain-nav">
+			<!--Add a close button (X) hyperlink on the top left corner-->
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li><a href="xml-rss.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!---------------------------------------------------->	
+	
+	<!--Main content section-->
+
+			<main>
+				<section class="Showcase">
+					<div class="bg-image"></div>
+
+					<div class="bg-text">
+						<h4>Advanced Internet and Web Learning Portfolio</h4>
+						<h1> I am Phillip Summersby</h1>
+						<h6>And I'm a Web Developer</h6>
+					</div>
+				</section>
+
+				<section class="BioWebTech">
+					<article class="Bio">
+						<h1>BIO</h1>
+						
+						<div class = "portrait-photograph">
+							<div class = "bio-portrait">
+								<img src="MEDIA/portrait-icon.jpg">
+							</div>
+
+							<div class="bio-paragraph">
+							<p>My name is Phillip Summersby and I am a student studying the IT Bachelor's course.
+								<br>My personal interests are about robotics and computer systems and my hobbies include gaming and studying (not at the same time).
+								<br> The reason I'm taking this paper is because I got nothing else better to do and mainly its just because its apart of the course.
+								<br> By the end of this paper I am hopinh I get to pass?
+							</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="WebTech">
+						<h1>MY WEB TECHNOLOGIES</h1>
+						<p>TOP 5 WEB TECHNO I USE:</p>
+		
+						<ol class="List">
+							<li>Web hosting: Never used one/don't remember/definitely not one of my top technos.</li>
+							<li>Web design: Adobe Photoshop.</li>
+							<li>Database: *cough wikipedia*.</li>
+							<li>Code Editor: Visual Studio Code.</li>
+							<li>Web Frameworks: Never used one/don't remember/definitely not one of my top technos.</li>
+						</ol>
+					</article>
+				</section>
+				
+				<p><br></p>
+				<h1>MY WEB DEVELOPMENT COMPETENCES</h1>
+					<section class="WebDev">
+					
+						<article>
+							<div class="flip-box">
+								<div class="flip-box-inner">
+							  		<div class="flip-box-front">
+										<h1>MARK-UP (HTML5)</h1>
+
+										<div class = "WebDev-portrait">
+
+											<img src="MEDIA/html5.png">
+										</div>
+									</div>
+
+
+									<div class="flip-box-back">
+										<h1>HTML5 Flip box: I've designed a couple basic websites before and know how to do some designing here and there but still have difficulty getting things fully working or remembering what code does what.</h1>
+									</div>
+							  
+								</div>
+							</div>
+						</article>
+
+						<article>
+							<div class="flip-box">
+								<div class="flip-box-inner">
+							  		<div class="flip-box-front">
+										<h1>STYLING (CSS3)</h1>
+
+										<div class = "WebDev-portrait">
+
+											<img src="MEDIA/css3.png">
+										</div>
+									</div>
+
+
+									<div class="flip-box-back">
+										<h1>CSS3 Flip box: I know somewhat a decent amount of css and know how to style and code but still need to learn about it as I dont design websites often/if not at all.</h1>
+									</div>
+							  
+								</div>
+							</div>
+						</article>
+
+						<article>
+							<div class="flip-box">
+								<div class="flip-box-inner">
+							  		<div class="flip-box-front">
+										<h1>INTERACTIVITY (JAVASCRIPT)</h1>
+
+										<div class = "WebDev-portrait">
+
+											<img src="MEDIA/javascript.png">
+										</div>
+									</div>
+
+
+									<div class="flip-box-back">
+										<h1>JAVASCRIPT Flip box: I've learned and tried javascript before but have little experience with using it so this is very new to me.</h1>
+									</div>
+							  
+								</div>
+							</div>
+						</article>
+
+				</section>
+
+
+
+
+
+
+				<div class="Auth-container">
+				<section class="Auth">
+					<article><br>
+						<h1>STATEMENT OF AUTHENTICITY</h1>
+						<div class="box-5">
+							<p>"I confirm that.</p><br>
+							<p>This is an original assessment and is entirely my own work.</p><br>
+							<p>It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text.</p><br>
+							<p>No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement."</p>
+							<br>
+						</div>
+					</article>
+				</section>
+				</div>
+
+			</main>
+		
+			<footer>
+				<div> @Created by: Phillip Summersby <br />
+				Contact me at: <a href="phillipsummersby@gmail.com">phillipsummersby@gmail.com</a></div>
+			</footer>
+
+		</body>
+
+		<script type="text/javascript" src="JS/nav-javascript.js"></script>
+
+	</body>
+</html>
